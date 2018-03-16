@@ -1,0 +1,27 @@
+.container{
+ margin: 10%;
+ margin-top: 3%;
+ margin-right: 20%;
+ font-size: 150%;
+}
+.info{
+ background-color: #2196F3;
+ padding: 2%;
+ font-size: 110%;
+}
+.jumbotron{
+ background-color: black;
+ padding-left: 40%;
+ color: white;
+}
+.quote{
+ padding-top: 3%;
+ background-color:grey;
+ padding-bottom: 10%;
+}
+.form{
+ padding-top: 3%;
+ background-color: grey;
+ padding-bottom: 10%;
+
+}
