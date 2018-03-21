@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Quotes} from './quote'
+import {Quotes} from '../quotes'
 @Component({
  selector: 'app-quote',
  templateUrl: './quote.component.html',
@@ -7,8 +7,8 @@ import {Quotes} from './quote'
 })
 export class QuoteComponent implements OnInit {
  quotes= [
-   new Quote(1,'Dr Phil','Sometimes you just got to give yourself what you wish someone else would give you.',),
-   new Quote(2,'Richard B. Sheridan', 'The surest way not to fail is to determine to succeed.'),
+   new Quotes(1,'Dr Phil','Sometimes you just got to give yourself what you wish someone else would give you.',),
+   new Quotes(2,'Richard B. Sheridan', 'The surest way not to fail is to determine to succeed.'),
  ];
 
  toogleDetails(index){
@@ -16,12 +16,13 @@ export class QuoteComponent implements OnInit {
  }
  deleteQuote(isComplete,index){
   if (isComplete){
-    let toDelete=confirm(`Are you sure you want to delete ${this.goals[index].name}`)
-           this.goals.splice(index,1);
+    let toDelete=confirm(`Are you sure you want to delete this quote: ${this.quotes[index].name}`)
+        this.quotes.splice(index,1);
+      this.quotes.splice(index,1);
       }
       }
 
- addNewQuote(quote){
+ addNewQuotes(quote){
    let quoteLength = this.quotes.length;
    quote.id=quoteLength+1;
    this.quotes.push(quote)

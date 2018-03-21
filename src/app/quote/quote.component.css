@@ -10,18 +10,19 @@
  font-size: 110%;
 }
 .jumbotron{
- background-color: black;
- padding-left: 40%;
+ background-color: grey;
+ padding-left: 30%;
  color: white;
+ font-size: 30px;
 }
 .quote{
- padding-top: 3%;
+ padding-top: 5%;
  background-color:grey;
- padding-bottom: 10%;
+ padding-bottom: 20%;
 }
 .form{
- padding-top: 3%;
+ padding-top: 5%;
  background-color: grey;
- padding-bottom: 10%;
+ padding-bottom: 20%;
 
 }

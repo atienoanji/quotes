@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {Quotes} from './quote'
+import {Quotes} from '../quotes'
 
 @Component({
  selector: 'app-quote-details',
@@ -7,10 +7,10 @@ import {Quotes} from './quote'
  styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
- @Input() quote:Quote
+ @Input() quote:Quotes
  @Output() isComplete= new EventEmitter<boolean>();
 
- quoteComplete(complete:boolean){
+ quoteDelete(complete:boolean){
  this.isComplete.emit(complete);
 }
  constructor() { }

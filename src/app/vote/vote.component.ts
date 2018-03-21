@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Quotes } from './quote';
+import {Quotes} from '../quotes'
 
 @Component({
  selector: 'app-vote',
@@ -11,21 +11,23 @@ export class VoteComponent implements OnInit {
  @Output() isComplete = new EventEmitter<boolean>();
 
  quotes= [
-   new Quote(1,'Dr Phil','Sometimes you just got to give yourself what you wish someone else would give you.',),
-   new Quote(2,'Richard B. Sheridan', 'The surest way not to fail is to determine to succeed.'),
+   new Quotes(1,'Dr Phil','Sometimes you just got to give yourself what you wish someone else would give you.',),
+   new Quotes(2,'Richard B. Sheridan', 'The surest way not to fail is to determine to succeed.'),
  ];
 
  upvotes = 0;
  downvotes = 0;
 
- upVote(){
-   this.upvotes = this.upvotes + 1;
- }
+ uvotes = 0;
+  dvotes = 0;
 
- downVote(){
-   this.downvotes = this.downvotes + 1;
- }
+  upVote(){
+    this.uvotes = this.uvotes + 1;
+  }
 
+  downVote(){
+    this.dvotes = this.dvotes + 1;
+  }
 
  constructor() { }
 

@@ -1,0 +1,36 @@
+.bdy {
+  text-align: center;
+  font-size: 24px;
+
+}
+#input {
+  border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    font-size: 24px;
+
+}
+#Author{
+  border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    font-size: 20px;
+}
+p{
+  text-align: center;
+  color: cyan;
+  font-size: 50px;
+}
+.labii{
+  color: green;
+  padding-right: 200px;
+  padding-left: 200px;
+
+
+}
